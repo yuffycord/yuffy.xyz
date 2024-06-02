@@ -8,7 +8,7 @@
            body {
             margin: 0;
             padding: 0;
-            background-color: rgb(24, 24, 24);
+            background-color: rgb(0, 0, 0);
             font-family: Arial, sans-serif;
         }
 
@@ -42,13 +42,6 @@
             font-size: 15px;
         }
 
-        h1 {
-            font-size: 60px;
-            text-align: center;
-            color: white;
-            margin-top: 80px;
-        }
-
         h3 {
             text-align: center;
             color: white;
@@ -71,6 +64,11 @@
             text-decoration: none;
             margin: 0 10px;
         }
+        .cat-image {
+            display: block;
+            margin: auto;
+            max-width: 80%;
+        }
     </style>
 </head>
 <body>
@@ -79,9 +77,11 @@
         <button class="invite-button" onclick="redirectToInvitePage()">BOTを招待</button>
     </header>
     
-    <h1>404 Not Found</h1>
+    <br><br><br><br>
     <h3>お探しのページは見つかりませんでした。</h3>
-    
+    <div class="content">
+        <img class="cat-image" src="https://http.cat/404" alt="HTTP Cat 404">
+    </div>
     <footer>
         <a href="https://github.com/yurryly/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
         <a href="https://yuffy.xyz/discord" target="_blank"><i class="fab fa-discord"></i> Discord</a>
