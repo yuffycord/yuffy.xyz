@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Yuffy.xyz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+           body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(24, 24, 24);
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            z-index: 999;
+        }
+
+        header h2 {
+            display: inline-block;
+            margin: 0;
+            margin-right: 20px;
+        }
+
+        header .invite-button {
+            background-color: #5c68ee;
+            color: white;
+            padding: 10px 30px; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right:3%; 
+            font-size: 15px;
+        }
+
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            color: white;
+            margin-top: 80px;
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+        }
+
+        footer {
+            margin: 0;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            z-index: 999; 
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 onclick="redirectToHomePage()">Yuffy.xyz</h2>
+        <button class="invite-button" onclick="redirectToInvitePage()">BOTを招待</button>
+    </header>
+    
+    <h1>404 Not Found</h1>
+    <h3>お探しのページは見つかりませんでした。</h3>
+    
+    <footer>
+        <a href="https://github.com/yurryly/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://yuffy.xyz/discord" target="_blank"><i class="fab fa-discord"></i> Discord</a>
+        <a href="https://twitter.com/yurryly" target="_blank"><i class="fab fa-twitter"></i> Twitter</a> 
+        <br>
+        <small>&copy; 2024 Yurryly</small>
+    </footer>
+    <script>
+        function redirectToInvitePage() {
+            window.location.href = "https://yuffy.xyz/invite";
+        }
+        function redirectToHomePage() {
+            window.location.href = "https://yuffy.xyz";
+        }
+    </script>
+</body>
+</html>
