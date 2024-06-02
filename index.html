@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yuffy.xyz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(0, 0, 0);
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(51, 51, 51, 0.8);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 10px 20px;
+            z-index: 999;
+        }
+
+        header h2 {
+            display: inline-block;
+            margin: 0;
+            margin-right: 20px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        header h2:hover {
+            transform: scale(1.1);
+        }
+
+        header .invite-button {
+            background-color: #5c68ee;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 3%;
+            font-size: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        header .invite-button:hover {
+            background-color: #31573f;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-top: 20%;
+            font-size: 3em;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            text-align: center;
+            color: white;
+            font-size: 1.2em;
+            margin-top: 20px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .content {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cta-button {
+            background-color: #299f5b;
+            color: white;
+            padding: 15px 50px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 30px;
+        }
+
+        .cta-button1 {
+            background-color: #5c68ee;
+            color: white;
+            padding: 15px 50px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 30px;
+        }
+        .cta-button:hover {
+            background-color: #00ad5c;
+            transform: scale(1.05);
+        }
+        .cta-button1:hover {
+            background-color: #3c4cdc;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin: 0;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(51, 51, 51, 0.8);
+            backdrop-filter: blur(10px);
+            color: white;
+            text-align: center;
+            z-index: 999;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #5c68ee;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .shape {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: rgba(94, 94, 94, 0.171);
+            backdrop-filter: blur(5px);
+            border-radius: 50%;
+            animation: move 20s infinite linear;
+        }
+
+        .shape:nth-child(odd) {
+            border-radius: 1;
+        }
+
+        @keyframes move {
+            from {
+                transform: translateY(0) rotate(0);
+            }
+
+            to {
+                transform: translateY(-100vh) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 onclick="redirectToHomePage()">Yuffy.xyz</h2>
+        <button class="invite-button" onclick="redirectToInvitePage()">BOTを招待</button>
+    </header>
+
+    <div class="background" id="background">
+        <!-- 物体 -->
+        <div class="shape" style="left: 10%; top: 10%;"></div>
+        <div class="shape" style="left: 70%; top: 20%;"></div>
+        <div class="shape" style="left: 30%; top: 60%;"></div>
+        <div class="shape" style="left: 90%; top: 80%;"></div>
+        <div class="shape" style="left: 50%; top: 40%;"></div>
+    </div>
+
+    <h1>Welcome to Yuffy.xyz</h1>
+    <p>（多分）高機能で日本人向けのBOTを制作しています。<br>現在YuffyBOTはアルファリリースであり、<br>様々な機能を制作中です。ぜひ、今すぐ体験をし、<br>今後の開発に貢献をしてください！</p>
+    <div class="content">
+        <button class="cta-button" onclick="redirectToInvitePage()">BOTを導入する</button>
+        /////
+        <button class="cta-button1" onclick="redirectToDiscordPage()"><i class="fab fa-discord"></i> サーバーに参加</button>
+    </div>
+
+    <footer>
+        <a href="https://github.com/yurryly/" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://yuffy.xyz/discord" target="_blank"><i class="fab fa-discord"></i> Discord</a>
+        <a href="https://twitter.com/yurryly" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+        <br>
+        <small>&copy; 2024 Yurryly</small>
+    </footer>
+    <script>
+        function redirectToInvitePage() {
+            window.location.href = "https://yuffy.xyz/invite";
+        }
+        function redirectToHomePage() {
+            window.location.href = "https://yuffy.xyz";
+        }
+        function redirectToDiscordPage() {
+            window.location.href = "https://yuffy.xyz/discord";
+        }
+    </script>
+</body>
+
+</html>
