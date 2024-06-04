@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as r,a1 as t}from"./chunks/framework.DCKU21so.js";const p=JSON.parse('{"title":"Yuffy Bot 利用規約","description":"","frontmatter":{},"headers":[],"relativePath":"terms.md","filePath":"terms.md"}'),o={name:"terms.md"},i=t("",22),l=[i];function h(n,f,c,d,s,_){return r(),e("div",null,l)}const y=a(o,[["render",h]]);export{p as __pageData,y as default};
